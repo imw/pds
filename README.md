@@ -46,8 +46,8 @@ Please visit the [AT Protocol docs](https://atproto.com/guides/overview) for add
 
 ### Where is the code?
 
-* [TypeScript code](https://github.com/bluesky-social/atproto)
-* [Go code](https://github.com/bluesky-social/indigo)
+* [TypeScript code](https://github.com/imw/atproto)
+* [Go code](https://github.com/imw/indigo)
 
 ### What is the current status of federation?
 
@@ -73,7 +73,7 @@ Developers may now run self-hosted PDS hosts on the production network!
 
 Though it is still recommended to run experiments in the developer sandbox network.
 
-Read the [SANDBOX.md](https://github.com/bluesky-social/pds/blob/main/SANDBOX.md) for an overview of the sandbox network.
+Read the [SANDBOX.md](https://github.com/imw/pds/blob/main/SANDBOX.md) for an overview of the sandbox network.
 
 ## Self-hosting PDS
 
@@ -148,13 +148,13 @@ These should all return your server's public IP.
 On your server via ssh, download the installer script using wget:
 
 ```bash
-wget https://raw.githubusercontent.com/bluesky-social/pds/main/installer.sh
+wget https://raw.githubusercontent.com/imw/pds/main/installer.sh
 ```
 
 or download it using curl:
 
 ```bash
-curl https://raw.githubusercontent.com/bluesky-social/pds/main/installer.sh >installer.sh
+curl https://raw.githubusercontent.com/imw/pds/main/installer.sh >installer.sh
 ```
 
 And then run the installer using bash:
@@ -217,7 +217,7 @@ sudo pdsadmin update
 
 This project is dual-licensed under MIT and Apache 2.0 terms:
 
-- MIT license ([LICENSE-MIT.txt](https://github.com/bluesky-social/pds/blob/main/LICENSE-MIT.txt) or http://opensource.org/licenses/MIT)
-- Apache License, Version 2.0, ([LICENSE-APACHE.txt](https://github.com/bluesky-social/pds/blob/main/LICENSE-APACHE.txt) or http://www.apache.org/licenses/LICENSE-2.0)
+- MIT license ([LICENSE-MIT.txt](https://github.com/imw/pds/blob/main/LICENSE-MIT.txt) or http://opensource.org/licenses/MIT)
+- Apache License, Version 2.0, ([LICENSE-APACHE.txt](https://github.com/imw/pds/blob/main/LICENSE-APACHE.txt) or http://www.apache.org/licenses/LICENSE-2.0)
 
 Downstream projects and end users may choose either license individually, or both together, at their discretion. The motivation for this dual-licensing is the additional software patent assurance provided by Apache 2.0.
