@@ -23,14 +23,17 @@ jobs:
       id-token: write
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          path: main
+
       - name: Checkout atproto
         uses: actions/checkout@v3
         with:
           repository: 'imw/atproto'
+          path: atproto
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v2
