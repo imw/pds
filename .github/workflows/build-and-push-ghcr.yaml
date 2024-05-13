@@ -26,7 +26,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          path: main
+          path: pds
 
       - name: Checkout atproto
         uses: actions/checkout@v3
@@ -63,7 +63,7 @@ jobs:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           platforms: linux/amd64,linux/arm64
-          file: ./Dockerfile
+          file: ./pds/Dockerfile
           tags: |
             ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
