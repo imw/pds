@@ -23,6 +23,12 @@ jobs:
       id-token: write
 
     steps:
+      - name: Checkout atproto
+        uses: actions/checkout@v3
+        with:
+          repository: 'imw/atproto'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
